@@ -33,9 +33,9 @@ const ItemListContainer = () => {
 
   return (
     <div>
-      <Center bg="#D6EAF8" h="100px" color="black">
-        <Heading as="h2" size="2xl">
-          Cursos por Categoria
+      <Center bg="#7dbae5" h="80px" color="black" >
+        <Heading as="h6" size="2xl">
+          Capacitate con los mejores
         </Heading>
       </Center>
       {categoria ? <ItemList cursos={catFilter} /> : <ItemList cursos={Data} />}
