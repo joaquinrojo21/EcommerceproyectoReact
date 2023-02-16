@@ -5,7 +5,7 @@ import ItemList from "./ItemList";
 import { Heading, Center } from "@chakra-ui/react"
 
 const ItemListContainer = () => {
-    const { category } = useParams()
+    const { categoria } = useParams()
 
     const getDatos = () => {
         return new Promise((resolve, reject) => {
@@ -28,7 +28,7 @@ const ItemListContainer = () => {
 
       fetchingData();
 
-      const catFilter = Data.filter((cursos) => cursos.category === category);
+      const catFilter = Data.filter((cursos) => cursos.categoria === categoria);
 
 
   return (
@@ -38,7 +38,7 @@ const ItemListContainer = () => {
           Cursos por Categoria
         </Heading>
       </Center>
-      {category ? <ItemList cursos={catFilter} /> : <ItemList cursos={Data} />}
+      {categoria ? <ItemList cursos={catFilter} /> : <ItemList cursos={Data} />}
     </div>
   )
 }

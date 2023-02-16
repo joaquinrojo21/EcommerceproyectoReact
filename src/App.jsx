@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ItemListContainer from './components/ItemListContainer'
-
+import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
    <Route exact path="/" element={<ItemListContainer />}/>
    <Route
           exact
-          path="/category/:category"
+          path="/categoria/:categoria"
           element={<ItemListContainer />}
         />
 

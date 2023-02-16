@@ -14,17 +14,17 @@ const Navbar = () => {
 <div className="collapse navbar-collapse" id="navbarNav">
   <ul className="navbar-nav">
     <li className="nav-item">
-      <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+      <a className="nav-link active" aria-current="page" href="#"> Inicio</a>
     </li>
-    <div class="dropdown">
-  <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <div className="dropdown">
+  <button className="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Categorias
   </button>
-  <ul class="dropdown-menu">
-    <li> <Link to={`/category/${"Presencial"}`}>
+  <ul className="dropdown-menu">
+    <li> <Link to={`/categoria/${"Presencial"}`}>
                   Presencial
                 </Link></li>
-    <li><Link to={`/category/${"Distancia"}`}>
+    <li><Link to={`/categoria/${"Distancia"}`}>
                   Distancia
                 </Link></li>
     

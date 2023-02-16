@@ -12,14 +12,15 @@ import {
     Button,
   } from "@chakra-ui/react";
   import { Link } from "react-router-dom"
-const Item = ({ id, nombre, cupos, categoria, img }) => {
+  import oro from "../assets/img/oro.jpg"
+const Item = ({ id, nombre, cupos, categoria }) => {
   return (
     <div>
     <div key={id}>
       <Center p="1rem">
         <Card className="card-main">
           <CardBody>
-            <Image borderRadius="lg" src={img} />
+            <Image borderRadius="lg" src={oro} />
             <Stack mt="6" spacing="3">
               <Heading size="md">{nombre}</Heading>
 

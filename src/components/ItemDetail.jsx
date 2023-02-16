@@ -13,6 +13,7 @@ import {
   } from "@chakra-ui/react";
   import { useParams } from "react-router-dom"
   import ItemCount from "./ItemCount"
+  import orocurso from "../assets/img/oro.jpg"
 
 const ItemDetail = ({ cursos }) => {
 
@@ -30,7 +31,7 @@ const ItemDetail = ({ cursos }) => {
           <Center p="1rem">
             <Card className="card-main">
               <CardBody>
-                <Image borderRadius="lg" src={curso.img} />
+                <Image borderRadius="lg" src={orocurso} />
                 <Stack mt="6" spacing="3">
                   <Heading size="md">{curso.nombre}</Heading>
                   <Text color="blue.800" fontSize="l">
